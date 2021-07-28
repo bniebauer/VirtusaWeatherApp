@@ -15,6 +15,8 @@
 		327CD6F726B088B9005CB6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327CD6F526B088B9005CB6A2 /* LaunchScreen.storyboard */; };
 		327CD70226B088BA005CB6A2 /* VirtusaWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327CD70126B088BA005CB6A2 /* VirtusaWeatherAppTests.swift */; };
 		327CD70D26B088BA005CB6A2 /* VirtusaWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327CD70C26B088BA005CB6A2 /* VirtusaWeatherAppUITests.swift */; };
+		3291D24B26B0B12700D54E99 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291D24A26B0B12700D54E99 /* WeatherController.swift */; };
+		3291D24D26B0B3C500D54E99 /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3291D24C26B0B3C500D54E99 /* WeatherResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		327CD70826B088BA005CB6A2 /* VirtusaWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtusaWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		327CD70C26B088BA005CB6A2 /* VirtusaWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtusaWeatherAppUITests.swift; sourceTree = "<group>"; };
 		327CD70E26B088BA005CB6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3291D24A26B0B12700D54E99 /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
+		3291D24C26B0B3C500D54E99 /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				327CD6F326B088B9005CB6A2 /* Assets.xcassets */,
 				327CD6F526B088B9005CB6A2 /* LaunchScreen.storyboard */,
 				327CD6F826B088B9005CB6A2 /* Info.plist */,
+				3291D24A26B0B12700D54E99 /* WeatherController.swift */,
+				3291D24C26B0B3C500D54E99 /* WeatherResult.swift */,
 			);
 			path = VirtusaWeatherApp;
 			sourceTree = "<group>";
@@ -258,8 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3291D24D26B0B3C500D54E99 /* WeatherResult.swift in Sources */,
 				327CD6EF26B088B7005CB6A2 /* ViewController.swift in Sources */,
 				327CD6EB26B088B7005CB6A2 /* AppDelegate.swift in Sources */,
+				3291D24B26B0B12700D54E99 /* WeatherController.swift in Sources */,
 				327CD6ED26B088B7005CB6A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

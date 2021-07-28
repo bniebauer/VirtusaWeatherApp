@@ -18,15 +18,31 @@ class VirtusaWeatherAppTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testValidZipCode() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let validZipCode = "16066"
+        WeatherController.shared.fetchWeatherFor(zip: validZipCode) { result in
+            switch result {
+            case .success(let weather):
+                XCTAssert(weather.location!.name == "Cranberry Township")
+            case .failure( _):
+                XCTFail()
+            }
+            
+        }
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testInvalidZipCode() throws {
+        let invalidZip = "abcd"
+        WeatherController.shared.fetchWeatherFor(zip: invalidZip) { result in
+            switch result {
+            case .success( _):
+                XCTFail()
+            case .failure(let error):
+                print(error.localizedDescription)
+                XCTAssert(true)
+            }
         }
     }
 
